@@ -8,7 +8,7 @@ export default function Topbar() {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <Search className="searchIcon"/>
+          <Search className="searchIcon" />
           <input
             className="searchInput"
             type="text"

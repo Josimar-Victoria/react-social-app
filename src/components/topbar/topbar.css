@@ -66,8 +66,8 @@
 .topbarIconBadge {
   width: 15px !important;
   height: 15px !important;
-  background-color:red;
-  border-radius:50%;
+  background-color: red;
+  border-radius: 50%;
   color: white;
   position: absolute;
   display: flex;

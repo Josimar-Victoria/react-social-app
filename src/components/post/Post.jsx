@@ -1,11 +1,19 @@
+import { Button, IconButton } from "@material-ui/core";
 import { MoreVert } from "@material-ui/icons";
 import React from "react";
+import { useState } from "react";
 import { User } from "../../dummyData";
 import "./post.css";
 
 export default function Post({ posts }) {
+  const [like, setLike] = useState(posts.like);
+  const [isliked, setIsLiked] = useState(false);
 
-
+  const likeHeandler = (e) => {
+    e.preventDefault();
+    setLike(isliked ? like - 1 : like + 1);
+    setIsLiked(!isliked);
+  };
   return (
     <div className="post">
       <div className="postWrapper">
@@ -16,7 +24,9 @@ export default function Post({ posts }) {
               alt="person"
               className="postProfileImg"
             />
-            <span className="postUserName">{User.filter((u) => u.id === posts.userId)[0].username}</span>
+            <span className="postUserName">
+              {User.filter((u) => u.id === posts.userId)[0].username}
+            </span>
             <span className="postDate">{posts?.date}</span>
           </div>
           <div className="postTopRight">
@@ -29,10 +39,16 @@ export default function Post({ posts }) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img className="likeIcon" src="/assets/like.png" alt="like" />
-            <img className="likeIcon" src="/assets/heart.png" alt="like" />
+            <IconButton onClick={likeHeandler}>
+              <img className="likeIcon" src="/assets/like.png" alt="like" />
+            </IconButton>
+
+            <IconButton onClick={likeHeandler}>
+              <img className="likeIcon" src="/assets/heart.png" alt="like" />
+            </IconButton>
+
             <span className="postLikeCounter">
-              {posts?.like} {""} me guanto
+              {like} {""} me guanto
             </span>
           </div>
           <div className="postBottomRight">

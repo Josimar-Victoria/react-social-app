@@ -1,5 +1,5 @@
-import './online.css'
-export default function Online({user}) {
+import "./online.css";
+export default function Online({ user }) {
   return (
     <li className="rightbarFriends">
       <div className="rightbarProfileImgContainer">

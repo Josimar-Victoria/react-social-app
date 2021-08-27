@@ -1,0 +1,51 @@
+.rightbarTitle {
+  margin-bottom: 20px !important;
+  margin-left: 20px !important;
+}
+.rightbarFriendList {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
+.rightbarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px !important;
+}
+
+.rightbarInfo {
+  margin-bottom: 30px !important;
+}
+.rightbarInfoItem {
+  margin-bottom: 12px !important;
+}
+.rightbarInfoKey {
+  color: #555;
+  font-weight: 500;
+  margin-left: 12px !important;
+}
+.rightbarInfoValue {
+  font-weight: 300;
+}
+.rightbarFollowings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rightbarFollow:hover {
+  filter: opacity(0.5);
+}
+.rightbarFollow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px !important;
+  cursor: pointer;
+}
+
+.rightbarFollowingsImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px !important;
+}
