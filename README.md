@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+<img src='https://github.com/Josimar-Victoria/react-social-app/blob/main/Captura%20de%20pantalla%20de%202021-08-30%2018-14-24.png?raw=true' alt='img'/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
